@@ -512,9 +512,12 @@
 <!-- ================= HERO ================= -->
 <section class="hero">
   <div class="hero-video-frame">
-    <video autoplay loop playsinline>
-      <source src="./hero-video.mp4" type="video/mp4">
-    </video>
+  <div id="intro">
+  <button id="playBtn">▶ Enter Portfolio</button>
+
+  <video id="introVideo" playsinline controls style="display:none;">
+    <source src="./hero-video.mp4" type="video/mp4">
+  </video>
   </div>
   <div class="hero-scrim"></div>
   <div class="scan-frame">
@@ -765,7 +768,9 @@
     <div class="footer-cta reveal">
       <h2 class="display">Let's build something that has to be trusted.</h2>
       <p>Open to opportunities in software development, AI/ML, and cybersecurity — internships, collaborations, or just a good technical conversation.</p>
-      <span class="edit-note">// add your email, phone, and LinkedIn here</span>
+     <p>Email: dhanushvishwa23@gmail.com</p>
+<p>Phone: +91 7204357164</p>
+<p>LinkedIn: https://www.linkedin.com/in/dhannushvishwa23</p>
     </div>
     <div class="footer-bottom">
       <span>© 2026 — Built with intent.</span>
@@ -792,6 +797,16 @@
     });
   }, { threshold: 0.15 });
   revealEls.forEach(el => io.observe(el));
+</script>
+  <script>
+const playBtn = document.getElementById("playBtn");
+const video = document.getElementById("introVideo");
+
+playBtn.onclick = function () {
+    playBtn.style.display = "none";
+    video.style.display = "block";
+    video.play();
+};
 </script>
 
 </body>
