@@ -494,6 +494,37 @@
   @media (prefers-reduced-motion: reduce){
     *{animation-duration:0.01ms !important;animation-iteration-count:1 !important;transition-duration:0.01ms !important;}
   }
+  /* Your existing CSS */
+
+#intro{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:black;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    z-index:9999;
+}
+
+#playBtn{
+    padding:15px 30px;
+    font-size:20px;
+    cursor:pointer;
+    border:none;
+    border-radius:10px;
+}
+
+#introVideo{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+</style>
 </style>
 </head>
 <body>
